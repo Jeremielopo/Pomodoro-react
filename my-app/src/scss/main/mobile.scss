@@ -1,0 +1,140 @@
+.block{
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.pomodoro {
+    @include flex-column;
+    align-items: center;
+    padding-top : 45rem;
+}
+.sky{
+    z-index: 0;
+    top: -327px;
+    height: 68rem;
+    background: linear-gradient(to bottom, #FFFFFF, #6DD5DD, #2980BD);
+    width: 78rem;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-box-shadow: 2px 1px 17px 0px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow:    2px 1px 17px 0px rgba(0, 0, 0, 0.83);
+    box-shadow:         2px 1px 17px 0px rgba(0, 0, 0, 0.83);
+    overflow: hidden; 
+    *{
+        display: none;
+    } 
+    .first-cloud{
+        position:absolute;
+        animation: mymove 20s infinite;
+    }
+    .first-cloudo{
+        left : -300px;
+        position:absolute;
+        animation: mymove 30s infinite;
+    }
+
+    .second-cloud{
+        	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6;
+        position: absolute;
+        animation: mymove 20s infinite;
+    }
+    .third-cloud{
+    -webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8;
+        position: absolute;
+        animation: mymove 15s infinite;
+    }
+    .mario {
+        display:block;
+        width: 45rem;
+        top: 42rem;
+        left: 41rem;
+        position : absolute;
+
+    }
+}
+
+.title {
+    z-index: 2;
+    position: absolute;
+    top: 10rem;
+    font-size: 3rem;
+    font-weight: 1000;
+    text-transform: uppercase ;
+    
+}
+.clouds{
+    display: 'none';
+    z-index: 1;
+    top:10rem;
+    position: absolute;
+  
+}
+#root {
+    height: inherit;
+    background: #49FC88;
+}
+body{
+    height: inherit;
+   
+    
+}
+.down{
+    position: absolute;
+    animation: down 3s ;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;  
+}
+.up{
+    position: absolute;
+    animation: up 3s ;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards; 
+}
+@keyframes down {
+    0% {top: 42rem;}
+	100% {top: 65rem;}
+  } 
+  @keyframes up {
+    0% {top: 65rem;}
+	100% {top: 42rem;}
+      
+  }
+
+@keyframes mymove {
+    0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+  } 
+
+  button {
+    background-color: #FC6963;
+    border: 6px solid #522438;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    padding: 0;
+    box-shadow: inset 4px 0 rgb(255 255 255 / 70%), inset -4px 0 rgb(0 0 0 / 20%);
+    margin: 0 5px;
+  }
+ 
+  h2{
+    font-size: 3rem;
+    top: 27px;
+    position: absolute;
+  }
