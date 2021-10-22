@@ -15,7 +15,8 @@ The pomodoro have  :
 This is the first version of this project it will soon be udapte :
 
 - Piece song (Mario theme);
-- more animations.
+- More animations;
+- Responsive udaptes.
 
 
 
