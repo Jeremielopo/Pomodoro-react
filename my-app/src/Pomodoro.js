@@ -31,7 +31,7 @@ function reset() {
     useEffect(
         () => { 
             let interval = null;
-           if(!isActive===true && minutes==25 ){
+           if(!isActive===true && minutes===25 ){
               
                 setSeconds(0)
                
@@ -73,7 +73,7 @@ function reset() {
 
 
           
-        }, [isActive,secondes,isFinish]
+        }, [isActive,secondes,isFinish,minutes]
     )
 
 
